@@ -1,21 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     
-    // Router simple basado en el pathname
-    const path = window.location.pathname;
+    // Router simple basado en el pathname (soporta URLs limpias y con extensión .html)
+    const path = window.location.pathname.toLowerCase();
+    const segments = path.split('/');
+    const page = segments[segments.length - 1] || 'index.html';
     
-    if (path.includes('index.html') || path === '/' || path === '') {
+    if (page === 'index.html' || page === 'index' || page === '') {
         renderDestacados();
         renderArtesanosDestacados();
-    } else if (path.includes('productos.html')) {
+    } else if (page.startsWith('productos')) {
         initCatalog();
-    } else if (path.includes('producto.html')) {
+    } else if (page.startsWith('producto')) {
         renderProductDetail();
-    } else if (path.includes('artesanos.html')) {
+    } else if (page.startsWith('artesanos')) {
         renderArtisanDirectory();
-    } else if (path.includes('artesano.html')) {
+    } else if (page.startsWith('artesano')) {
         renderArtisanDetail();
-    } else if (path.includes('talleres.html')) {
+    } else if (page.startsWith('talleres')) {
         initWorkshopForm();
     }
 });
