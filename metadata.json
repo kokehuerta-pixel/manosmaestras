@@ -1,0 +1,6 @@
+{
+  "name": "Manos Maestras",
+  "description": "Portafolio de comercio justo para artesanos chilenos, desarrollado en Vanilla JS, HTML semántico y CSS sin frameworks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

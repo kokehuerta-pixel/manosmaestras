@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manos Maestras | Artesanías de Comercio Justo</title>
+    <meta name="description" content="Descubre piezas únicas elaboradas por artesanos tradicionales bajo comercio justo. Compra directa sin intermediarios.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css?v=2.0">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <!-- Blossom Carousel: Native-first carousel library -->
+    <link rel="stylesheet" href="https://unpkg.com/@blossom-carousel/core/dist/blossom-carousel-core.css" />
+    <script defer src="https://unpkg.com/@blossom-carousel/web/dist/blossom-carousel-web.umd.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Manos Maestras",
+      "image": "assets/ambiente-hogar.webp",
+      "description": "Plataforma de exhibición y venta directa de artesanías tradicionales chilenas de comercio justo.",
+      "url": "https://manosmaestras.cl",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CL",
+        "addressLocality": "Santiago"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="brand">
+                <img src="assets/logo.png" alt="Logotipo Manos Maestras" class="brand-logo">
+                Manos Maestras
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Catálogo</a>
+                <a href="artesanos.html">Artesanos</a>
+                <a href="talleres.html">Talleres</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Artesanías Tradicionales<br><em>Hechas a Mano</em></h1>
+                <p>Conectamos tu mesa y tu hogar con las manos de quienes resguardan la memoria gráfica y material del Chile tradicional. Sin intermediarios, con total transparencia y trato de comercio justo garantizado.</p>
+                <div class="hero-actions">
+                    <a href="productos.html" class="btn btn-primary">Ver Catálogo de Obras</a>
+                    <a href="artesanos.html" class="btn btn-secondary">Conocer a los Artesanos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="section bg-white">
+            <div class="container values-grid">
+                <div class="value-item">
+                    <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                        <!-- Icono de apretón de manos / trato directo -->
+                        <path d="M16 48l12-12-6-6-12 12c-2 2-2 5 0 7s5 2 7 0z"/>
+                        <path d="M48 16L36 28l6 6 12-12c2-2 2-5 0-7s-5-2-7 0z"/>
+                        <path d="M26 26l12 12M32 20l6 6M26 38l6-6"/>
+                        <circle cx="32" cy="32" r="28" stroke="var(--color-divider)" stroke-dasharray="4 4"/>
+                    </svg>
+                    <h3>Curaduría Directa</h3>
+                    <p>Viajamos a la ruca y al taller. Compramos en mano propia eliminando agentes intermediarios.</p>
+                </div>
+                <div class="value-item">
+                    <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="var(--color-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                        <!-- Icono de libro / pergamino / historia de la pieza -->
+                        <path d="M12 52h40M12 12h32l8 8v32H12V12z"/>
+                        <path d="M44 12v8h8"/>
+                        <path d="M20 28h24M20 36h24M20 44h16"/>
+                        <circle cx="32" cy="32" r="28" stroke="var(--color-divider)" stroke-dasharray="4 4"/>
+                    </svg>
+                    <h3>Trazabilidad de Oficios</h3>
+                    <p>Cada pieza incluye su historia: de dónde proviene, cómo se fabricó y quién le dio vida.</p>
+                </div>
+                <div class="value-item">
+                    <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                        <!-- Icono de corazón protegido por manos / impacto social -->
+                        <path d="M32 46c-7-5-14-11-14-17 0-4.4 3.6-8 8-8 2.6 0 5 1.3 6 3.3 1-2 3.4-3.3 6-3.3 4.4 0 8 3.6 8 8 0 6-7 12-14 17z"/>
+                        <path d="M12 36c-2-4-2-9 0-13M52 36c2-4 2-9 0-13"/>
+                        <circle cx="32" cy="32" r="28" stroke="var(--color-divider)" stroke-dasharray="4 4"/>
+                    </svg>
+                    <h3>Propósito Social</h3>
+                    <p>Aseguramos la perpetuación de oficios patrimoniales inyectando el 80% del valor a la economía local rural.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Obras Destacadas</h2>
+                <div class="carousel-wrapper">
+                    <button class="carousel-control prev" id="destacados-prev" aria-label="Anterior">‹</button>
+                    <blossom-carousel id="destacados-container" class="carousel-container">
+                        <div class="skeleton-card">
+                            <div class="skeleton-img shimmer"></div>
+                            <div class="skeleton-text shimmer" style="width: 40%;"></div>
+                            <div class="skeleton-text shimmer" style="width: 70%;"></div>
+                            <div class="skeleton-text-short shimmer"></div>
+                        </div>
+                        <div class="skeleton-card">
+                            <div class="skeleton-img shimmer"></div>
+                            <div class="skeleton-text shimmer" style="width: 40%;"></div>
+                            <div class="skeleton-text shimmer" style="width: 70%;"></div>
+                            <div class="skeleton-text-short shimmer"></div>
+                        </div>
+                        <div class="skeleton-card">
+                            <div class="skeleton-img shimmer"></div>
+                            <div class="skeleton-text shimmer" style="width: 40%;"></div>
+                            <div class="skeleton-text shimmer" style="width: 70%;"></div>
+                            <div class="skeleton-text-short shimmer"></div>
+                        </div>
+                    </blossom-carousel>
+                    <button class="carousel-control next" id="destacados-next" aria-label="Siguiente">›</button>
+                    <div class="carousel-progress-bar">
+                        <div class="carousel-progress-fill" id="destacados-progress"></div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="productos.html" class="btn btn-secondary">Ver todo el catálogo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Artisans -->
+        <section class="section bg-white">
+            <div class="container">
+                <h2 class="section-title">Manos que nos enorgullecen</h2>
+                <div class="carousel-wrapper">
+                    <button class="carousel-control prev" id="artesanos-prev" aria-label="Anterior">‹</button>
+                    <blossom-carousel id="artesanos-container" class="carousel-container">
+                        <div class="skeleton-card">
+                            <div class="skeleton-img shimmer"></div>
+                            <div class="skeleton-text shimmer" style="width: 60%; margin: 1.25rem auto;"></div>
+                            <div class="skeleton-text shimmer" style="width: 40%; margin: 0 auto 1.25rem;"></div>
+                        </div>
+                        <div class="skeleton-card">
+                            <div class="skeleton-img shimmer"></div>
+                            <div class="skeleton-text shimmer" style="width: 60%; margin: 1.25rem auto;"></div>
+                            <div class="skeleton-text shimmer" style="width: 40%; margin: 0 auto 1.25rem;"></div>
+                        </div>
+                        <div class="skeleton-card">
+                            <div class="skeleton-img shimmer"></div>
+                            <div class="skeleton-text shimmer" style="width: 60%; margin: 1.25rem auto;"></div>
+                            <div class="skeleton-text shimmer" style="width: 40%; margin: 0 auto 1.25rem;"></div>
+                        </div>
+                    </blossom-carousel>
+                    <button class="carousel-control next" id="artesanos-next" aria-label="Siguiente">›</button>
+                    <div class="carousel-progress-bar">
+                        <div class="carousel-progress-fill" id="artesanos-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaser Banner -->
+        <section class="section">
+            <div class="container">
+                <div class="teaser-banner">
+                    <h2>Aprende el <em>Oficio Tradicional</em></h2>
+                    <p>Próximamente lanzaremos talleres virtuales liderados directamente por nuestros maestros artesanos. Involúcrate con la materia.</p>
+                    <a href="talleres.html" class="btn btn-primary">Preinscribirme ahora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3 style="color: white; font-family: var(--font-headings); margin-bottom: 1rem;">Manos Maestras</h3>
+            <p>© 2026 Manos Maestras. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

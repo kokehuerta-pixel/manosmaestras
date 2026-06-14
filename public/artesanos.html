@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio de Artesanos | Manos Maestras</title>
+    <meta name="description" content="Conoce a los custodios de nuestra historia material. Los artesanos chilenos que mantienen vivo el oficio a través del tiempo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css?v=2.0">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="brand">
+                <img src="assets/logo.png" alt="Logotipo Manos Maestras" class="brand-logo">
+                Manos Maestras
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Catálogo</a>
+                <a href="artesanos.html" style="color: var(--color-accent); font-weight: 600;">Artesanos</a>
+                <a href="talleres.html">Talleres</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title">Nuestros <em>Artesanos</em></h1>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 4rem;">Sin maestras y maestros no hay cultura material. Honramos a quienes día a día, con profunda vocación, moldean, tallan y tejen la identidad de nuestra tierra.</p>
+            
+            <div class="grid" id="artisans-grid">
+                <div class="skeleton-card">
+                    <div class="skeleton-img shimmer"></div>
+                    <div class="skeleton-text shimmer" style="width: 60%; margin: 1.25rem auto;"></div>
+                    <div class="skeleton-text shimmer" style="width: 40%; margin: 0 auto 1.25rem;"></div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-img shimmer"></div>
+                    <div class="skeleton-text shimmer" style="width: 60%; margin: 1.25rem auto;"></div>
+                    <div class="skeleton-text shimmer" style="width: 40%; margin: 0 auto 1.25rem;"></div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-img shimmer"></div>
+                    <div class="skeleton-text shimmer" style="width: 60%; margin: 1.25rem auto;"></div>
+                    <div class="skeleton-text shimmer" style="width: 40%; margin: 0 auto 1.25rem;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3 style="color: white; font-family: var(--font-headings); margin-bottom: 1rem;">Manos Maestras</h3>
+            <p>© 2026 Manos Maestras. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
