@@ -1024,9 +1024,8 @@ footer h3 {
         transform-style: preserve-3d;
     }
 
-    /* Evitamos conflictos de transformaciones en hover cuando el scroll animado está activo */
+    /* Evitamos conflictos de transformaciones en hover eliminando 'transform' para mantener el efecto 3D */
     .carousel-container .card:hover {
-        transform: none !important;
         box-shadow: 0 12px 30px rgba(194, 89, 63, 0.2);
     }
 }
