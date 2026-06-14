@@ -278,52 +278,50 @@ main {
     font-family: var(--font-body);
     font-weight: 600;
     font-size: 0.9rem;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-sm);
     cursor: pointer;
-    transition: var(--transition);
-    border: 1px solid transparent;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease, color 0.2s ease;
+    border: 2px solid var(--color-ink);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     text-align: center;
+    box-shadow: 4px 4px 0px 0px var(--color-ink);
+    position: relative;
+}
+
+.btn:hover {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px 0px var(--color-ink);
 }
 
 .btn-primary {
     background-color: var(--color-accent);
     color: white;
-    box-shadow: 0 4px 14px rgba(194, 89, 63, 0.15);
 }
 
 .btn-primary:hover {
     background-color: #B04B33;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(194, 89, 63, 0.25);
     color: white;
 }
 
 .btn-secondary {
-    background-color: transparent;
+    background-color: var(--color-card);
     color: var(--color-ink);
-    border: 1px solid var(--color-divider);
 }
 
 .btn-secondary:hover {
     background-color: var(--color-ink);
-    border-color: var(--color-ink);
     color: var(--color-paper);
-    transform: translateY(-2px);
 }
 
 .btn-whatsapp {
     background-color: #107C41;
     color: white;
-    box-shadow: 0 4px 14px rgba(16, 124, 65, 0.15);
 }
 
 .btn-whatsapp:hover {
     background-color: #0D6233;
     color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(16, 124, 65, 0.25);
 }
 
 /* Grids & Cards */
@@ -665,11 +663,11 @@ main {
 .form-control {
     width: 100%;
     padding: 0.9rem 1.25rem;
-    border: 1px solid var(--color-divider);
-    border-radius: var(--radius-md);
+    border: 2px solid var(--color-ink);
+    border-radius: var(--radius-sm);
     font-family: var(--font-body);
     background: var(--color-card);
-    transition: var(--transition);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
     font-size: 0.95rem;
     color: var(--color-ink);
 }
@@ -677,7 +675,7 @@ main {
 .form-control:focus {
     outline: none;
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(194, 89, 63, 0.08);
+    box-shadow: 3px 3px 0px 0px var(--color-ink);
 }
 
 .form-success-msg {
@@ -705,26 +703,30 @@ main {
 
 .filter-btn {
     padding: 0.6rem 1.5rem;
-    border-radius: 100px;
-    border: 1px solid var(--color-divider);
+    border-radius: var(--radius-sm);
+    border: 2px solid var(--color-ink);
     background: var(--color-card);
-    color: var(--color-muted);
+    color: var(--color-ink);
     cursor: pointer;
-    transition: var(--transition);
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease, color 0.2s ease;
     font-weight: 600;
     font-size: 0.88rem;
+    box-shadow: 2px 2px 0px 0px var(--color-ink);
+    position: relative;
 }
 
 .filter-btn:hover {
-    border-color: var(--color-accent-light);
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px 0px var(--color-ink);
     color: var(--color-accent);
 }
 
 .filter-btn.active {
     background: var(--color-accent);
     color: white;
-    border-color: var(--color-accent);
-    box-shadow: 0 4px 12px rgba(194, 89, 63, 0.15);
+    border-color: var(--color-ink);
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px 0px var(--color-ink);
 }
 
 /* Footer Styling */
