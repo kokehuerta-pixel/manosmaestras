@@ -1,4 +1,5 @@
 {
+  "framework": null,
   "installCommand": "echo 'No install'",
   "buildCommand": "echo 'Static build'",
   "outputDirectory": "public",
