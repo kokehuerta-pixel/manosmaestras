@@ -1,4 +1,5 @@
 {
+  "installCommand": "echo 'No install'",
   "buildCommand": "echo 'Static build'",
   "outputDirectory": "public",
   "cleanUrls": true
